@@ -1,5 +1,6 @@
 html {
 	background: #111;
+	color: white;
 }
 
 table {
@@ -16,6 +17,7 @@ input[type="text"] {
 	font-weight: bold;
 	border-radius: 5px;
 	border: 1px solid white;
+	color: white;
 }
 
 input[type="button"] {
