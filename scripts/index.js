@@ -19,6 +19,9 @@ buttonTryWebCalc.onclick = () => {
 }
 
 var buttonViewWebCalcFiles = document.getElementById("webCalcFiles");
+buttonViewWebCalcFiles.onclick = () => {
+	window.location.href = "https://github.com/anville95/Web-Scientific-Calculator";
+}
 
 var buttonTryAndroidCalc = document.getElementById("androidCalcTrial");
 buttonTryAndroidCalc.onclick = () => {
@@ -27,7 +30,7 @@ buttonTryAndroidCalc.onclick = () => {
 
 var buttonViewAndroidCalcFiles = document.getElementById("androidCalcFiles");
 buttonViewAndroidCalcFiles.onclick = () => {
-	window.location.href = "https://github.com/anville95/-Android-Scientific-Calculator-Neon-";
+	window.location.href = "https://github.com/anville95/Android-Calculator";
 }
 
 var buttonTryCliCalc = document.getElementById("cliCalcTrial");
