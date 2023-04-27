@@ -15,53 +15,64 @@ html {
 .par {
 	padding-left: 10%;
 	padding-right: 10%;
+	color: white;
 }
 
 input[type="button"] {
 	background: transparent;
 	border: none;
 	font-size: 1em;
+	color: white;
 }
 
 .topButton {
 	padding: 18px;
 	border: solid 1px white;
+	color: white;
 }
 
 .topButton:hover {
 	background: #333;
+	color: white;
 }
 
 .topButton:active {
 	background: #fff;
+	color: white;
 }
 
 .topButtonGroup {
 	border-spacing: 10px;
 	margin-right: auto;
 	margin-left: auto;
+	color: white;
 }
 
 .thumbnail {
 	width: 40%;
 	border: none;
 	padding-left: 10%;
+	color: white;
 }
 
 .button {
 	padding: 16px;
 	border: solid 1px #e2ffff;
 	background: black;
+	color: white;
 }
 
 .button:hover{
 	background: #002626;
+	color: white;
 }
 
 .button:active {
 	background: #00dcff;
+	color: white;
 }
 
 .buttonGroup {
 	border-spacing: 10px;
+	color: white;
 }
