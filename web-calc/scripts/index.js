@@ -921,5 +921,9 @@ document.addEventListener("keyup", (event) => {
 
 var buttonHelp = document.getElementById("?");
 buttonHelp.onclick = () => {
-	window.location.replace("html/help.html");
+	if(window.location.href.indexOf("phone") > -1){
+		window.location.replace("help.html");
+	} else {
+		window.location.replace("html/help.html");
+	}
 }
