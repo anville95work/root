@@ -921,10 +921,9 @@ document.addEventListener("keyup", (event) => {
 
 var buttonHelp = document.getElementById("?");
 buttonHelp.onclick = () => {
-	alert("window.location.href.indexOf(phone): " + window.location.href.indexOf("phone");
-	if(window.location.href.indexOf("phone") > -1){
+	if(window.location.href.indexOf("phone-index") > -1){
 		window.location.replace("help.html");
 	} else {
-		window.location.replace("html/help.html");
+		window.location.replace("html/help.html");	
 	}
 }
