@@ -1,3 +1,10 @@
+//Get the window dimensions
+var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+var height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+//Redirect to mobile layout page if The aspect ratio is that of a mobile
+if(height / width > 1 && window.location.href.indexOf("phone-index") === -1){
+	window.location.replace("phone-index.html");
+}
 var buttonEmailMe = document.getElementById("emailMe");
 buttonEmailMe.onclick = () => {
 	window.location.href = "https://mail.google.com/mail/?view=cm&fs=1&to=anville095@gmail.com";
