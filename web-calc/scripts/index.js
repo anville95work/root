@@ -331,6 +331,12 @@ function simplify(expressionArray){
 		expressionArray[position - 1] = power(expressionArray[position - 1], expressionArray[position + 1]);
 		removeItems(position, 2, expressionArray);
 	}
+	//root
+	while(expressionArray.indexOf("^1/") > -1){
+		var position = expressionArray.indexOf("^1/");
+		expressionArray[position - 1] = power(expressionArray[position - 1], 1 / expressionArray[position + 1]);
+		removeItems(position, 2, expressionArray);
+	}
 	//squareroot
 	while(expressionArray.indexOf("√") > -1){
 		var position = expressionArray.indexOf("√");
@@ -364,16 +370,17 @@ function simplify(expressionArray){
 		expressionArray[position - 1] = multiply(expressionArray[position - 1], expressionArray[position + 1]);
 		removeItems(position, 2, expressionArray);
 	}
+	//subtraction
+	//subtraction comes before addition. I noticed this after getting 31 from the expression: 9 x 10 - 9 + 10 x 5 instead of 131
+	while(expressionArray.indexOf("-") > -1){
+		var position = expressionArray.indexOf("-");
+		expressionArray[position - 1] = subtract(expressionArray[position - 1], expressionArray[position + 1]);
+		removeItems(position, 2, expressionArray);
+	}
 	//addition
 	while(expressionArray.indexOf("+") > -1){
 		var position = expressionArray.indexOf("+");
 		expressionArray[position - 1] = add(expressionArray[position - 1], expressionArray[position + 1]);
-		removeItems(position, 2, expressionArray);
-	}
-	//subtraction
-	while(expressionArray.indexOf("-") > -1){
-		var position = expressionArray.indexOf("-");
-		expressionArray[position - 1] = subtract(expressionArray[position - 1], expressionArray[position + 1]);
 		removeItems(position, 2, expressionArray);
 	}
 	//multiply implicit products e.g (12)(13)
@@ -455,7 +462,7 @@ var data = {
 	count : 0,
 	result : 0,
 	isShifted : false,
-	isInRads : false,
+	isInRads : true,
 	//Methods for appending data
 	appendElement : function(element){
 		if(data.count >= data.expressionArray.length){
