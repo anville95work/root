@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Scientific Calculator</title>
+		<link type="text/css" rel="stylesheet" href="css/anville95.css">
+	</head>
+	<body>
+		<div class="calculator">
+			<div class="screen">
+				<input id="expressionScreen" type="text" value="" readonly>
+				<input id="answerScreen" type="text" value="answer appears here😊" readonly>
+			</div>
+			<div class="buttonsRow">
+				<div id="shift" class="topButtons">SHIFT</div>
+				<div id="alpha" class="topButtons">ALPHA</div>
+				<div id="reciprocal" class="topButtons"><span class="shiftText">[!] </span>x^-1</div>
+				<div id="sin" class="topButtons"><span class="shiftText">[sin^-1] </span>sin</div>
+			</div>
+
+			<div class="buttonsRow">
+				<div id="log" class="topButtons"><span class="shiftText">[10^] </span>log</div>
+				<div id="ln" class="topButtons"><span class="shiftText">[e^] </span>ln</div>
+				<div id="pow" class="topButtons"><span class="shiftText">[x√ y] </span>x^y</div>
+				<div id="tan" class="topButtons"><span class="shiftText">[tan^-1] </span>tan</div>
+			</div>
+
+			<div class="buttonsRow">
+				<div id="openBrackets" class="topButtons">(</div>
+				<div id="closeBrackets" class="topButtons">)</div>
+				<div id="root" class="topButtons"><span class="shiftText">[3√ x] </span>√x</div>
+				<div id="cos" class="topButtons"><span class="shiftText">[cos^-1] </span>cos</div>
+			</div>
+
+			<!--Bottom Buttons-->
+			<div class="buttonsRow">
+				<div id="7" class="regularButtons">7</div>
+				<div id="8" class="regularButtons">8</div>
+				<div id="9" class="regularButtons">9</div>
+				<div id="del" class="specialButtons">DEL</div>
+				<div id="AC" class="specialButtons">AC</div>
+			</div>
+
+			<div class="buttonsRow">
+				<div id="4" class="regularButtons">4</div>
+				<div id="5" class="regularButtons">5</div>
+				<div id="6" class="regularButtons">6</div>
+				<div id="multiply" class="regularButtons">x</div>
+				<div id="divide" class="regularButtons">÷</div>
+			</div>
+
+			<div class="buttonsRow">
+				<div id="1" class="regularButtons">1</div>
+				<div id="2" class="regularButtons">2</div>
+				<div id="3" class="regularButtons">3</div>
+				<div id="add" class="regularButtons">+</div>
+				<div id="subtract" class="regularButtons">-</div>
+			</div>
+
+			<div class="buttonsRow">
+				<div id="0" class="regularButtons">0</div>
+				<div id="dot" class="regularButtons">.</div>
+				<div id="exponential" class="regularButtons"><span class="shiftText">[π] </span>X 10^x<span class="alphaText"> [e]</span></div>
+				<div id="answer" class="regularButtons">Ans</div>
+				<div id="equal" class="regularButtons">=</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="scripts/anville95.js"></script>
+</html>

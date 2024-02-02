@@ -1,0 +1,163 @@
+html {
+	background: black;
+}
+
+.calculator {
+	display: table;
+	white-space: nowrap;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.screen {
+    background: transparent;
+    width: 62.5vw;
+    border: dashed 1px #ccfefb;
+    border-right: dashed 1px #b2fdb2;
+    border-bottom: dashed 1px #b2fdb2;
+		box-shadow: 0vh 0vh 1vh 0.3vh #b2fdb2;
+    padding: 0.5vh;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    margin-bottom: 0.5vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.screen input {
+	background: #0000;
+	width: 99%;
+	color: white;
+	font-size: 4vh;
+	font-style: normal;
+	display: block;
+	padding: 1vh;
+	border: none;
+
+}
+
+.screen input:focus {
+	outline: none;
+}
+
+#expressionScreen {
+	text-align: left;
+	color: #ccfefb;
+}
+
+#answerScreen {
+	text-align: right;
+	color: #b2fdb2;
+}
+
+.buttonsRow {
+	display: table;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.buttonsRow div {
+	font-size: 3vh;
+	display: inline-table;
+	padding: 2vh;
+	margin: 1vh;
+	text-align: center;
+	user-select: none;
+	cursor: pointer;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.topButtons {
+	color: #8dfc8d;
+	border: solid 1px #8dfc8d;
+	height: 4vh;
+	width: 13vw;
+	border-radius: 1vh;
+}
+
+.topButtons:hover {
+	background: #8dfc8d40;
+}
+
+.topButtons:active {
+	background: #8dfc8d;
+}
+
+#shift {
+	color: #ffe57e;
+	border: solid 1px #ffe57e;
+}
+
+.shiftActive {
+	box-shadow: 0vh 0vh 1vh 0.4vh #ffe57e;
+	background: #ffe57e22;
+}
+
+#shift:hover {
+	background: #ffe57e40;
+}
+
+#shift:active {
+	background: #ffe57e;
+}
+
+#alpha {
+	color: #edb4b4;
+	border: solid 1px #edb4b4;
+}
+
+.alphaActive {
+	background: #edb4b422;
+	box-shadow: 0vh 0vh 1vh 0.4vh #edb4b4;
+}
+
+#alpha:hover {
+	background: #edb4b440;
+}
+
+#alpha:active {
+	background: #edb4b4;
+}
+
+.regularButtons {
+	font-size: 2vh;
+	color: #a0fcfc;
+	border: solid 1px #a0fcfc;
+	width: 10vw;
+	height: 6.5vh;
+	border-radius: 1vh;
+}
+
+.regularButtons:hover {
+	background: #a0fcfc40;
+}
+
+.regularButtons:active {
+	background: #a0fcfc;
+}
+
+.specialButtons {
+	color: #ff761c;
+	border: solid 1px #ff761c;
+	width: 10vw;
+	height: 6.5vh;
+	border-radius: 1vh;
+}
+
+.specialButtons:hover {
+	background-color: #ff761c40;
+}
+
+.specialButtons:active {
+	background: #ff761c;
+}
+
+.alphaText {
+	font-size: 2.5vh;
+	color: #edb4b4;
+}
+
+.shiftText {
+	font-size: 2.5vh;
+	color: #ffe57e;
+}
