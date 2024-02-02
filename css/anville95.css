@@ -287,6 +287,18 @@ html, body {
     background-image: url("../images/scientific%20web%20calculator.png");
 }
 
+#simple-vintage-calculator {
+    background-image: url("../images/simple-vintage-calculator.png.png");
+}
+
+#scientific-web-calculator-v2 {
+    background-image: url("../images/scientific-web-calculator-v2.png");
+}
+
+#android-calculator-v2 {
+    background-image: url("../images/android-calculator-v2.png");
+}
+
 .descriptionAndButtonsDiv {
     display: inline-table;
     vertical-align: middle;

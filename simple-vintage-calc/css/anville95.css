@@ -1,0 +1,207 @@
+body {
+	background-image: linear-gradient(90deg, #1b0707, #1b0707, #1b0707, #1b0707, #1c0808, #1c0808, #1c0808,#280b0b,#280b0b)
+}
+.calculator {
+	background-image: linear-gradient(to right, #111, #222, #333, #444, #444, #555, #444, #444, #333, #222, #111);
+	border: solid 1px #000;
+	box-shadow: 1vh 1vh 3vh 3vh #000;
+	display: table;
+	padding: 3vh;
+	padding-top: 7vh;
+	border-radius: 2vh;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#manufacturerLabel {
+	display: block;
+	width: 65vh;
+	text-align: right;
+	color: #999;
+	padding: 1vh;
+}
+
+#screen {
+	width: 59vh;
+	padding: 1.5vh;
+	background-color: #f1f6a9;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 1vh;
+}
+
+#screen input[type="text"] {
+	border: none;
+	background: transparent;
+	color: black;
+	font-size: 4vh;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	width: 100%
+}
+
+#screen input[type="text"]:focus {
+	outline:none;
+}
+
+#expression {
+	text-align: left;
+}
+
+#answer {
+	text-align: right;
+}
+
+.row {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.button {
+	color: #fff;
+	font-size: 3vh;
+	font-family: xenara;
+	display: inline-block;
+	position: relative;
+	height: 10vh;
+	width: 15vh;
+	border: solid 1px black;
+	border-radius:1.5vh;
+	margin: 1vh 0.5vh;
+	cursor: pointer;
+	background-image: linear-gradient(45deg, #333, #222, #222, #333);
+	user-select: none;
+}
+
+.button::before {
+	content: "";
+	position: absolute;
+	top: 1vh;
+	left: 1vh;
+	bottom: 2vh;
+	right: 2vh;
+	border: solid 1px #fff2;
+	border-right: none;
+	border-radius: 1.5vh;
+	background-image: linear-gradient(to right, #222, #222, #555);
+	user-select: none;
+}
+
+.button:active::before {
+	background-image: linear-gradient(to right, #333, #222, #222, #222, #333);
+	border-right: solid 1px #fff2;
+}
+
+.bottomButtons {
+	width:20vh;
+}
+
+#clear::before {
+	content: "AC";
+}
+#divide::before {
+	content: "÷";
+}
+#multiply::before {
+	content: "x";
+}
+#power::before {
+	content: "ON";
+}
+
+#seven::before {
+	content: "7";
+}
+#eight::before {
+	content: "8";
+}
+#nine::before {
+	content: "9";
+}
+#delete::before {
+	content: "DEL";
+}
+
+#four::before {
+	content: "4";
+}
+#five::before {
+	content: "5";
+}
+#six::before {
+	content: "6";
+}
+#minus::before {
+	content: "-";
+}
+
+#one::before {
+	content: "1";
+}
+#two::before {
+	content: "2";
+}
+#three::before {
+	content: "3";
+}
+#add::before {
+	content: "+";
+}
+
+#zero::before {
+	content: "0";
+}
+#dot::before {
+	content: ".";
+}
+
+#equal{
+	background-image: linear-gradient(45deg, #8b3700, #341500, #341500, #8b3700);
+}
+#equal::before {
+	content: "=";
+	background-image: linear-gradient(to right, #341500, #341500, #8b3700);
+}
+#equal:active::before {
+	background-image: linear-gradient(to right, #8b3700, #341500, #341500, #341500, #8b3700);
+	border-right: solid 1px #fff2;
+}
+
+.operators {
+	background-image: linear-gradient(45deg, #9c6206, #5a3803, #5a3803, #9c6206);
+}
+
+.operators::before {
+	content: "=";
+	background-image: linear-gradient(to right, #5a3803, #5a3803, #9c6206);
+}
+
+.operators:active::before {
+	background-image: linear-gradient(to right, #9c6206, #5a3803, #5a3803, #5a3803, #9c6206);
+	border-right: solid 1px #fff2;
+}
+
+#power  {
+	background-image: linear-gradient(45deg, #222, #000, #000, #222);
+}
+
+.powerOn::before {
+	content: "ON";
+	color: #ffffb7;
+	font-weight:bold;
+	text-shadow: 0px 0px 6px #ffffb7;
+	background-image: linear-gradient(to right, #000, #000, #222, #222);
+}
+
+.powerOn:active::before {
+	background-image: linear-gradient(to right, #000, #222, #222, #222, #000);
+}
+
+.powerOff::before {
+	content: "ON";
+	color: #777;
+	font-weight:bold;
+	text-shadow: none;
+}
