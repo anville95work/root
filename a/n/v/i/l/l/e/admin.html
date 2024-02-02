@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="scrollBarHiddenDivs">
+    <head>
+        <meta charset="utf-8">
+        <title>admin dashboard</title>
+        <link rel="stylesheet" href="admin.css">
+    </head>
+    <body class="scrollBarHiddenDivs">
+        <div class="rootDiv scrollBarHiddenDivs">
+            <div class="adminDetailsContainer">
+                <div>
+                    <img id="adminsProfilePic" src="../../../../../../../images/anville.jpg" alt="admin's picture">
+                    <input id="adminsName" type="text" value="anville el grande" readonly>
+                </div>
+            </div>
+            <div id="commandsHistory" class="scrollBarVisibleDivs">
+                <div id="commandsHistoryScrollable">
+                    <!--
+                    <i class="executedCommand">executed command</i>
+                    <i class="grandTitle">Grand Title</i>
+                    <div class="historyElement">
+                        <i class="title">title</i>
+                        <i class="textResponse">key: value</i>
+                        <i class="imageResponse">picture: <span>imageName</span></i>
+                    </div>
+                    -->
+                </div>
+            </div>
+            <textarea id="commandInput"></textarea>
+            <!--This is a popup for viewing graphic information-->
+            <div id="graphicViewerDiv">
+                <input type="text" value="graphic data name" readonly>
+            </div>
+        </div>
+        <div id="backgroundTint"></div>
+    </body>
+    <script type="text/javascript" src="../../../../../../../scripts/cookies.js"></script>
+    <script type="module" src="admin.js"></script>
+</html>

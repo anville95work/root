@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="scrollBarHiddenDivs" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Become anville's friend</title>
+    <link rel="stylesheet" href="../css/anville95Phone.css">
+  </head>
+  <body class="scrollBarHiddenDivs">
+    <div class="rootDiv">
+      <img class="wordmarkLogo" src="../images/logo-wordmark.png" alt="amville wordmark logo">
+      <div class="signupProfilePicContainer">
+        <div >
+          <img id="profilePictureSelection" src="../images/anville.jpg" alt="Your profile picture">
+        </div>
+      </div>
+      <div class="verticalLine signupVerticalLine"></div>
+      <div class="signupDetailsContainer">
+        <div class="signupDetailsContainerChild">
+          <input type="text" class="signupDetailsContainerField" name="" placeholder="username">
+          <input type="text" class="signupDetailsContainerField" name="" placeholder="email address">
+          <div class="passwordInputRow">
+            <input type="text" class="signupDetailsContainerField passwordInputRowField" name="" placeholder="password">
+            <img target="passwordInput" class="togglePasswordTextVisibility" src="../images/eye-open.png" alt="toggle visibility">
+          </div>
+          <div class="passwordInputRow">
+            <input type="text" class="signupDetailsContainerField passwordInputRowField" name="" placeholder="repeat password">
+            <img target="repeatPasswordInput" class="togglePasswordTextVisibility" src="../images/eye-open.png" alt="toggle visibility">
+          </div>
+        </div>
+      </div>
+      <div class="verticalLine signupVerticalLine"></div>
+      <div class="signupButtonsContainer">
+        <div>
+          <input id="createAccountButton" type="button" class="buttons" name="" value="BEFRIEND">
+          <a href="phone-login.html">Already a friend? Authenticate</a>
+        </div>
+      </div>
+    </div>
+
+    <!--Invsible image selector-->
+    <input id="selectImage" accept="image/*" type="file">
+  </body>
+  <script type="text/javascript" src="../scripts/cookies.js"></script>
+  <script type="module" src="../scripts/sign-up.js"></script>
+</html>

@@ -1,0 +1,268 @@
+/*The features I don't usually use for some elements*/
+input:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    caret-color: white;
+}
+
+textarea {
+    caret-color: white;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.scrollBarVisibleDivs {
+  /*Scrollbar customization*/
+  /*Microsoft*/
+  scrollbar-3dlight-color: #ffffff40;
+  scrollbar-arrow-color: #fff;
+  scrollbar-darkshadow-color: #fff;
+
+  /*Firefox(Gecko)*/
+  scrollbar-color: #fff;
+  scrollbar-width: 8px;
+}
+
+.scrollBarVisibleDivs::-webkit-scrollbar {
+	width: 5px;
+}
+
+.scrollBarVisibleDivs::-webkit-scrollbar-track {
+	background: #ffffff40;
+}
+
+
+.scrollBarVisibleDivs::-webkit-scrollbar-thumb {
+	background-color: #ffffff;
+	border-radius: 12px;
+	border: none;
+}
+
+/*Hide scrollbar*/
+.scrollBarHiddenDivs {
+    /*Preventing illegal scrollbar styling whatever...*/
+    scrollbar-face-color: ThreeDFace !important;
+    scrollbar-shadow-color: ThreeDDarkShadow !important;
+    scrollbar-highlight-color: ThreeDHighlight !important;
+    scrollbar-3dlight-color: ThreeDLightShadow !important;
+    scrollbar-darkshadow-color: ThreeDDarkShadow !important;
+    scrollbar-track-color: Scrollbar !important;
+    scrollbar-arrow-color: ButtonText !important;
+    /*Hiding the scrollbars on the html and body*/
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+/*Hiding the scrollbars on the html and body*/
+.scrollBarHiddenDivs::-webkit-scrollbar {
+	display: none;
+}
+
+html, body {
+    background: black;
+}
+
+.rootDiv {
+    height: 95vh;
+    width: 98vw;
+    background: transparent;
+}
+
+#commandsHistory {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    overflow-y: scroll;
+    font-size: 2.4vh;
+    color: white;
+    height: 92vh;
+    width: 97vw;
+    border: solid 1px white;
+    border-bottom: none;
+    border-radius: 2vh 2vh 0vh 0vh;
+}
+
+#commandsHistoryScrollable {
+    display: table;
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rootDiv textarea {
+    font-size: 2.4vh;
+    color: white;
+    height: 4vh;
+    width: 96.5vw;
+    border: solid 1px white;
+    border-radius: 0vh 0vh 2vh 2vh;
+    background: transparent;
+}
+
+.adminDetailsContainer {
+    position: fixed;
+    top: 0;
+    width: 97vw;
+}
+
+.adminDetailsContainer div {
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background: #000c;
+    z-index: 9;
+    width: 95vw;
+    padding: 2vh 0vh;
+    border: solid 1px white;
+    border-right: solid 5px white;
+    border-left: solid 5px white;
+    border-radius: 2vh;
+    margin-top: 2vh;
+}
+
+.adminDetailsContainer img {
+    display: inline-table;
+    vertical-align: top;
+    height: 5vh;
+    width: 5vh;
+    border: solid 1px white;
+    border-right: solid white 3px;
+    border-left: solid white 3px;
+    border-radius: 1.5vh;
+    object-fit: cover;
+    margin: 1vh 5vw;
+    padding: 0.5vh 2vw;
+}
+
+.adminDetailsContainer input[type="text"] {
+    display: inline-table;
+    vertical-align: top;
+    font-size: 2.5vh;
+    color: white;
+    font-weight: 500;
+    border: solid 1px white;
+    border-left: solid 3px white;
+    border-right: solid 3px white;
+    border-radius: 1.5vh;
+    padding: 1vh;
+    margin: 1vh 5vw;
+    margin-top: 2vh;
+}
+
+#graphicViewerDiv {
+    display: none;
+    position: fixed;
+    z-index: 15;
+    height: 60vh;
+    width: 60vh;
+    top: 20vh;
+    left:25vw;
+    background: #000a;
+    background-size: 100% auto;
+    opacity: 0.8;
+    border: solid 1px white;
+    border-top: solid 5px white;
+    border-bottom: solid 5px white;
+    border-radius: 2vh;
+    padding: 1vh;
+}
+
+#graphicViewerDiv input[type="text"] {
+    display: table;
+    margin-top: 50vh;
+    font-size: 2.5vh;
+    color: white;
+    text-align: center;
+    padding: 1vh 2vw;
+    border: solid 1px white;
+    border-top: solid 3px white;
+    border-bottom: solid 3px white;
+    border-radius: 1vh;
+    background: #0005;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#backgroundTint {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000c;
+    height: 100vh;
+    width: 100vw;
+    z-index: 12;
+}
+
+.historyElement {
+    display: table;
+    padding: 2vh 2vw;
+    border: none;
+    border-left: solid 3px white;
+    border-right: solid 3px white;
+    border-radius: 2vh;
+    margin-left: 2vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+i {
+    font-size: 2.4vh;
+    color: white;
+    font-size: 2.4vh;
+    color: white;
+    display: table;
+    font-style: normal;
+    margin: 1vh;
+    font-family: monospace;
+    user-select: none;
+}
+
+.executedCommand {
+    font-size: 2.4vh;
+    color: white;
+    margin-bottom: 2vh;
+    margin-top: 5vh;
+}
+
+.grandTitle {
+    font-size: 2.4vh;
+    color: white;
+    font-weight: bolder;
+    border-top: solid white 2px;
+    border-bottom: solid white 2px;
+    border-radius: 1.5vh;
+    margin-bottom: 1.5vh;
+    padding: 1vh 1vw;
+    margin-left: 2vw;
+}
+
+.textResponse, imageResponse {
+    font-size: 2.4vh;
+    color: white;
+}
+
+.imageResponse .imageLink {
+    color: beige;
+    font-size: 2.4vh;
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.imageResponse span:hover {
+    text-shadow: 0vh 0vh 2vh;
+}
+
+.imageResponse span:active {
+    color: aquamarine;
+    text-shadow: 0vh 0vh 3vh;
+}

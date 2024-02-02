@@ -1,80 +1,159 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>anville95 homepage</title>
-		<link rel="stylesheet" type="text/css" href="css/index.css">
-	</head>
-	<body>
-		<img class="icon" src="images/anville_icon.png">
-		<table class="topButtonGroup">
-			<tr>
-				<td class="topButton" onclick="buttonEmailMe.click()"><input id="emailMe" type="button" value="Email Me"></td>
-				<td class="topButton" onclick="buttonCallMe.click()"><input id="callMe" type="button" value="Call Me"></td>
-				<td class="topButton" onclick="buttonKnowMeMore.click()"><input id="knowMeMore" type="button" value="Know Me More"></td>
-			</tr>
-		</table>
-		<p class="par">
-			Hi, Thank you for visiting my site.<br>
-			I am Mito Austine, alias anville95.<br>
-			Below are some of my work. I value your feedback and I would love to receive your comments and suggestions on any portion that interests you.<br>
-			Thanks again, I hope you enjoy them, Mazel tov!
-		</p>
-		<br>
-		<br>
-		<br>
-		<!--Front End Web Calculator-->
-		<p class="par">
-			<h3 class="par">Scientific Web Calculator</h3>
-			<p class="par">
-				Front-end processing Scientific Calculator; all calculations are performed on the client side. Here's a picture depicting it.
-			</p>
-		</p>
-		<table class="buttonGroup par">
-			<tr>
-				<td class="button" onclick="buttonTryWebCalc.click()"><input id="webCalcTrial" type="button" value="Try it out"></td>
-				<td class="button" onclick="buttonViewWebCalcFiles.click()"><input id="webCalcFiles" type="button" value="View Project Files"></td>
-			</tr>
-		</table>
-		<img class="thumbnail" src="images/web-front-end-calc-icon.png">
-		<br>
-		<br>
-		<br>
-		<!--Android Calculator-->
-		<p class="par">
-			<h3 class="par">Scientific Android Calculator</h3>
-			<p class="par">
-				A Neon Scientific Calculator for Android, with tanh, cosh and sinh as well.
-			</p>
-		</p>
-		<table class="buttonGroup par">
-			<tr>
-				<td class="button" onclick="buttonTryAndroidCalc.click()"><input id="androidCalcTrial" type="button" value="Try it out"></td>
-				<td class="button" onclick="buttonViewAndroidCalcFiles.click()"><input id="androidCalcFiles" type="button" value="View Project Files"></td>
-			</tr>
-		</table>
-		<img class="thumbnail" src="images/scientific-android-calculator.png">
-		<br>
-		<br>
-		<br>
-		<!--Scientific Java CLI Calculator-->
-		<p class="par">
-			<h3 class="par">Scientific Java CLI Calculator</h3>
-			<p class="par">
-				A non graphical Interface Scintific Calculator in Java. Can solve even expressions with brackets.
-			</p>
-		</p>
-		<table class="buttonGroup par">
-			<tr>
-				<td class="button" onclick="buttonTryCliCalc.click()"><input id="cliCalcTrial" type="button" value="Try it out"></td>
-				<td class="button" onclick="buttonViewCliCalcFiles.click()"><input id="cliCalcFiles" type="button" value="View Project Files"></td>
-			</tr>
-		</table>
-		<img class="thumbnail" src="images/java-cli-scientific-calculator.png">
-		<br>
-		<br>
-		<br>
-		<script type="text/javascript" src="scripts/index.js"></script>
-		<!--The script is always terminal-->
-	</body>
+<html class="scrollBarHiddenDivs">
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>anville95</title>
+    <link rel="stylesheet" href="css/anville95.css">
+  </head>
+  <body class="scrollBarHiddenDivs">
+    <div class="rootDiv">
+      <!--The top row-->
+      <div class="inlineDivsContainer">
+            <div id="anvillesDescriptionContainer" class="scrollBarVisibleDivs">
+              <div>
+                  Well, hello there 😁. I am anville (or anville95). Thank you for visiting my site. I love making computer programs and learning new things. On the left is my picture, I don't know how to pose or smile 😂, but I do love that shirt. It was great meeting you, if you wish to become one of my friends, please click the 'befriend me' button below, it will take you to a sign-up page. Thanks again for visiting, enjoy.
+              </div>
+            </div>
+            <div class="horizontalLine"></div>
+            <div class="logoContainer">
+              <div class="logoDiv">
+                <img src="images/logo.png">
+              </div>
+              <div class="verticalLine"></div>
+            </div>
+            <div class="horizontalLine"></div>
+            <div class="anvillesPictureContainer">
+              <img src="images/anville.jpg">
+            </div>
+      </div>
+      <div class="buttonsConntainerDiv">
+        <a href="mailto: anville95official@gmail.com" type="button" class="buttons">email me</a>
+        <a href="tel: +254743437015" type="button" class="buttons">call me</a>
+        <a href="https://www.facebook.com/profile.php?id=100089548575582&sk=about" type="button" class="buttons">facebook me</a>
+        <a id="beFriendHereMeButton" href="html/sign-up.html" type="button" class="buttons">befriend me here</a>
+        <a id="authenticateFriendshipButton" href="html/login.html" type="button" class="buttons">authenticate friendship</a>
+        <a id="viewProfileButton" class="buttons">view profile</a>
+        <a id="forumButton" href="html/forum.html" class="buttons">forum</a>
+      </div>
+      <h3 class="projectsHeading">Here are the few stuff I've made, enjoy😁</h3>
+      <div class="projectsContainer scrollBarVisibleDivs">
+        <div id="projectsContainer" class="projectsContainerScrollable">
+            
+            <!--Projects Go Here-->
+          <div class="project">
+            <div class="nameAndPicDiv">
+              <h5>scientific web calculator</h5>
+              <div id="scientific-web-calculator" class="projectPicture"></div>
+            </div>
+            <div class="descriptionAndButtonsDiv">
+              <div class="projectButtonsContainer">
+                <input action="link" href="web-calc/index.html" class="buttons projectButtons" type="button" value="Try it out">
+                <input gitHubLink="https://github.com/anville95/Web-Scientific-Calculator" class="buttons projectButtons" type="button" value="View Project's Files">
+                <input projectName="scientific web calculator" class="buttons projectButtons" type="button" value="Comment on the project">
+              </div>
+              <div class="projectDescriptionDiv scrollBarVisibleDivs">
+                <div>
+                    This was my first web calculator. I tried to use my favourite colours (black and white), in it. I have made a better web calclator now. This one was slow due to the costant concatination of expression array elements for screen upon each character's adition to it. It can also solve trigoometric ratios, thank you for reading, enjoy.
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project">
+            <div class="nameAndPicDiv">
+              <h5>scientific android calculator</h5>
+              <div id="scientific-android-calculator" class="projectPicture"></div>
+            </div>
+            <div class="descriptionAndButtonsDiv">
+              <div class="projectButtonsContainer">
+                <input action="file" href="bin/calc.apk" class="buttons projectButtons" type="button" value="Try it out">
+                <input gitHubLink="https://github.com/anville95/Android-Calculator" class="buttons projectButtons" type="button" value="View Project's Files">
+                <input projectName="scientific android calculator" class="buttons projectButtons" type="button" value="Comment on the project">
+              </div>
+              <div class="projectDescriptionDiv scrollBarVisibleDivs">
+                <div>
+                    This was my first android application. I mixed a lot of colours in it 😂, but I know better now. It is a scientific android calculator. It also can calculate trigonometric ratios and other stuff. However, due to the extensive use of contsraint layout throughout the layout xml, there occurred a little problem with the screen. Now upon starting the calculator, one must swipe the screep in order for it to display stuff. I made sure to inform the user of this by using a toast. Thank you for reading, enjoy the calculator, I will keep making better ones.
+                </div>
+              </div>
+            </div>
+          </div>
+            
+          <div class="project">
+            <div class="nameAndPicDiv">
+              <h5>scientific java CLI calculator</h5>
+              <div id="scientific-java-CLI-calculator" class="projectPicture"></div>
+            </div>
+            <div class="descriptionAndButtonsDiv">
+              <div class="projectButtonsContainer">
+                <input action="file" href="zip/calc.zip" class="buttons projectButtons" type="button" value="Try it out">
+                <input gitHubLink="https://github.com/anville95/CLI-Scientific-Calculator" class="buttons projectButtons" type="button" value="View Project's Files">
+                <input projectName="scientific java CLI calculator" class="buttons projectButtons" type="button" value="Comment on the project">
+              </div>
+              <div class="projectDescriptionDiv scrollBarVisibleDivs">
+                <div>
+                    This is a scientific calculator which lacks a graphical user interface. It can calculate Trigonometric ratios and any arbtrary arithmetics, even with brackets involved. It has a few commands and simple way of getting things like factorials, trigonometric ratios and powers. To turn of the calculator, one types 'exit'. The compiled classes folder has the .class files which can be ran easily with the command 'java Calc'. One have the java sdk installed in order to run the Calculator. I'll make a faster and more fun one in the future, thank you for checkking it out, enjoy.
+                </div>
+              </div>
+            </div>
+          </div>
+            
+        </div>
+      </div>
+      <!--Background Tint-->
+      <div id="backgroundTint"></div>
+      <!--The popup for signing up, in or commenting as guest-->
+      <div id="signUpInOrLoginPopUp" class="popup">
+        <b>You are not logged in!🥺</b>
+        <div>
+          <input id="commentAsGuestButton" class="buttons" type="button" id="" value="Comment as Guest">
+          <input id="goToSignUpPageButton" class="buttons" type="button" id="" value="Sign Up">
+          <input id="goToLoginPageButton" class="buttons" type="button" id="" value="Sign in">
+        </div>
+      </div>
+      <!--Pop up for commenting-->
+      <div id="commentingPopup" class="popup">
+        <div id="projectsNameAndPicture">
+          <b id="commentsProjectName">Project Name Comments</b>
+          <img src="images/anville.jpg">
+        </div>
+        <div id="projectsCommentsContainer" class="scrollBarVisibleDivs">
+          <div id="projectsCommentsContainerScrollable">
+              <div id="getCommentsButtonsContainer">
+                  <input id="getMoreCommentsButton" class="buttons" type="button" value="get more comments">
+                  <input id="getAllCommentsButton" class="buttons" type="button" value="get all comments">
+              </div>
+              
+          </div>
+        </div>
+        <textarea id="commentTextArea" class="scrollBarVisibleDivs" placeholder="type your comment 😊"></textarea>
+        <div id="addCommentButton" class="buttons">Add Comment</div>
+      </div>
+
+      <!--Comment as guest-->
+      <div id="commentAsGuestPopup" class="popup">
+        <div id="commentAsGuestProjectsNameAndPicture">
+          <b id="commentsAsGuestProjectName">Project Name Comments</b>
+          <img src="images/anville.jpg">
+        </div>
+        <input type="text" id="commentAsGuestEmailAddress" placeholder="email address">
+        <textarea id="commentAsGuestTextArea" placeholder="type your comment 😊"></textarea>
+        <div id="addCommentAsGuestButton" class="buttons">Add Comment</div>
+      </div>
+
+      <!--Profile popup-->
+      <div id="profilePopup" class="popup">
+        <img id="profilePicture" src="images/logo.png" alt="your profile picture">
+        <input id="usernameInput" type="text" value="username" readonly>
+        <input id="emailAddressInput" type="text" value="email adress" readonly>
+        <input id="editProfileButton" class="buttons" type="button" value="EDIT">
+        <input id="logoutButton" type="button" value="LOGOUT">
+      </div>
+    </div>
+      
+    <!--Invisible profile pic selector-->
+    <input id="selectImage" accept="image/*" type="file">
+  </body>
+  <script type="text/javascript" src="scripts/cookies.js"></script>
+  <script type="module" src="scripts/index.js"></script>
 </html>

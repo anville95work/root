@@ -1,0 +1,1026 @@
+/*The features I don't usually use for some elements*/
+input:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    caret-color: white;
+}
+
+textarea {
+    caret-color: white;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.scrollBarVisibleDivs {
+  /*Scrollbar customization*/
+  /*Microsoft*/
+  scrollbar-3dlight-color: #ffffff40;
+  scrollbar-arrow-color: #fff;
+  scrollbar-darkshadow-color: #fff;
+
+  /*Firefox(Gecko)*/
+  scrollbar-color: #fff;
+  scrollbar-width: 8px;
+}
+
+.scrollBarVisibleDivs::-webkit-scrollbar {
+	width: 5px;
+}
+
+.scrollBarVisibleDivs::-webkit-scrollbar-track {
+	background: #ffffff40;
+}
+
+
+.scrollBarVisibleDivs::-webkit-scrollbar-thumb {
+	background-color: #ffffff;
+	border-radius: 12px;
+	border: none;
+}
+
+/*Hide scrollbar*/
+.scrollBarHiddenDivs {
+    /*Preventing illegal scrollbar styling whatever...*/
+    scrollbar-face-color: ThreeDFace !important;
+    scrollbar-shadow-color: ThreeDDarkShadow !important;
+    scrollbar-highlight-color: ThreeDHighlight !important;
+    scrollbar-3dlight-color: ThreeDLightShadow !important;
+    scrollbar-darkshadow-color: ThreeDDarkShadow !important;
+    scrollbar-track-color: Scrollbar !important;
+    scrollbar-arrow-color: ButtonText !important;
+    /*Hiding the scrollbars on the html and body*/
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+/*Hiding the scrollbars on the html and body*/
+.scrollBarHiddenDivs::-webkit-scrollbar {
+	display: none;
+}
+
+html, body {
+    background: black;
+}
+
+.rootDiv {
+    height: 95vh;
+    width: 98vw;
+    background: black;
+}
+
+.inlineDivsContainer {
+    display: table;
+    background: transparent;
+    white-space: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+}
+
+#anvillesDescriptionContainer {
+    display: inline-flex;
+    vertical-align: top;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: solid 1px white;
+    border-left: solid 6px white;
+    border-right: solid 6px white;
+    border-radius: 2vh;
+    width: 25vw;
+    height: 20vh;
+}
+
+#anvillesDescriptionContainer div {
+    display: table;
+    color: white;
+    font-size: 2.4vh;
+    display: table;
+    width: 20vw;
+    white-space: normal;
+}
+
+.horizontalLine {
+    display: inline-table;
+    vertical-align: top;
+    margin-top: 10vh;
+    width: 10vw;
+    height: 3px;
+    border: none;
+    background: white;
+}
+
+.logoContainer {
+    display: inline-table;
+    vertical-align: top;
+    width: 20vw;
+    height: 26vh;
+    background: transparent;
+}
+
+.logoDiv {
+    display: table;
+    width: 20vw;
+    height: 23vh;
+    border: none;
+    border-left: solid 3px #fff;
+    border-bottom: solid 3px #fff;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logoDiv img {
+    display: table;
+    height: 23vh;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.verticalLine {
+    display: table;
+    height: 3vh;
+    width: 3px;
+    border: none;
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.anvillesPictureContainer {
+    display: inline-table;
+    vertical-align: top;
+    width: 25vw;
+    height: 20vh;
+    border: solid 1px white;
+    border-left: solid 6px white;
+    border-right: solid 6px white;
+    border-radius: 2vh;
+}
+
+.anvillesPictureContainer img {
+    height: 17vh;
+    width: 23vw;
+    border-radius: 2vh;
+    border: solid 1px white;
+    object-fit: cover;
+    margin: 1vh 1vw;
+}
+
+.buttonsConntainerDiv {
+    display: table;
+    border-top: solid 2px white;
+    border-left: solid 1px white;
+    border-right: solid 1px white;
+    border-radius: 2vh 2vh 0vh 0vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttonsConntainerDiv a {
+    display: inline-table;
+    color: white;
+    font-size: 2.6vh;
+    border: solid 1px white;
+    border-radius: 1.5vh;
+    padding: 1vh 1.5vw;
+    margin: 1vh 1vw;
+    text-decoration: none;
+}
+
+/*Some buttons will be invisible and will only be shown when user is logged in*/
+#viewProfileButton {
+    display: none;
+}
+
+#forumButton {
+    display: none;
+}
+
+.projectsHeading {
+    display: table;
+    margin: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 2.7vh;
+    text-decoration: none;
+    border-bottom: solid 2px white;
+    border-radius: 2vh;
+    padding: 1vh 2vw;
+}
+
+.projectsContainer {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 51vh;
+    width: 94vw;
+    border: solid 2px white;
+    border-radius: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projectsContainerScrollable {
+    display: table;
+    width: 92vw;
+    white-space: nowrap;
+}
+
+.project {
+    display: table;
+    border: solid 1px white;
+    border-radius: 2vh;
+    width: 89vw;
+    height: 47vh;
+    margin: 3vh;
+    margin-left: auto;
+    margin-right: auto;
+    background: #f1f6a912;
+}
+
+.nameAndPicDiv {
+    display: inline-table;
+    vertical-align: middle;
+    width: 32vw;
+    border: solid 1px white;
+    border-radius: 2vh;
+}
+
+.nameAndPicDiv h5 {
+    display: table;
+    color: white;
+    font-size: 2.5vh;
+    margin: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nameAndPicDiv div {
+    display: table;
+    width: 30vw;
+    height: 38vh;
+    border: solid 1px white;
+    border-radius: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+}
+
+#scientific-java-CLI-calculator {
+    background-image: url("../images/scientific%20java%20CLI%20calculator.png");
+}
+
+#scientific-android-calculator {
+    background-image: url("../images/scientific%20android%20calculator.png");
+}
+
+#scientific-web-calculator {
+    background-image: url("../images/scientific%20web%20calculator.png");
+}
+
+.descriptionAndButtonsDiv {
+    display: inline-table;
+    vertical-align: middle;
+    width: 56vw;
+    height: 45vh;
+    border: solid 1px white;
+    border-radius: 2vh;
+}
+
+.projectButtonsContainer {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projectDescriptionDiv {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 53vw;
+    height: 36vh;
+    border: solid 1px white;
+    border-radius: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projectDescriptionDiv div {
+    display: table;
+    width: 51vw;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 2.5vh;
+    white-space: normal;
+}
+
+.projectButtonsContainer input[type="button"] {
+    font-size: 2.5vh;
+    border: solid 1px white;
+    border-radius: 1vh;
+    padding: 1vh 1vw;
+    margin: 1vh 1vw;
+}
+
+#backgroundTint {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #0009;
+    z-index: 9;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    background: #000c;
+    border: solid 2px white;
+    border-top: solid 6px white;
+    border-bottom: solid 6px white;
+    border-radius: 2vh;
+    padding: 2vh 2vw;
+    z-index: 12;
+}
+
+#signUpInOrLoginPopUp {
+    top: 30vh;
+    left: 30vw;
+}
+
+#signUpInOrLoginPopUp b {
+    display: table;
+    color: white;
+    font-size: 2.6vh;
+    margin: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-bottom: solid 2px white;
+}
+
+#signUpInOrLoginPopUp input[type="button"] {
+    font-size: 2.5vh;
+    color: white;
+    padding: 1vh 1vw;
+    margin: 1vh 1vw;
+    margin-top: 2vh;
+    border: solid 1px white;
+    border-radius: 1.5vh;
+}
+
+#commentingPopup {
+    top: 4vh;
+    left: 22vw;
+}
+
+#projectsNameAndPicture {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-bottom: solid 1px white;
+    border-radius: 2vh;
+    padding: 1vh 1vw;
+    margin-bottom: 2vh;
+}
+
+#projectsNameAndPicture b {
+    color: white;
+    font-size: 2.6vh;
+    margin: 0vh 1vw;
+    margin-right: 23vw;
+}
+
+#projectsNameAndPicture img {
+    height: 3vh;
+    width: 3vh;
+    border: solid 1px white;
+    border-radius: 1vh;
+    padding: 1vh;
+    object-fit: cover;
+    margin: 0vh 1vw;
+}
+
+#projectsCommentsContainer {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 50vw;
+    height: 47vh;
+    border: solid 1px white;
+    border-radius: 2vh;
+    padding-bottom: 2vh;
+}
+
+#getCommentsButtonsContainer {
+    display: none;
+    margin: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    background: transparent;
+}
+
+#getCommentsButtonsContainer input[type="button"] {
+    color: white;
+    font-size: 2.6vh;
+    font-weight: bolder;
+    border: solid 1px white;
+    border-radius: 1vh;
+    padding: 2vh 2vw;
+    margin: 2vh 1vw;
+}
+
+#projectsCommentsContainerScrollable {
+    color: white;
+    font-size: 4vh;
+    text-align: center;
+    display: table;
+    width: 48vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#commentTextArea {
+    display: inline-flex;
+    vertical-align: bottom;
+    width: 40vw;
+    height: 20vh;
+    color: white;
+    font-size: 2.5vh;
+    background: transparent;
+    border: solid 1px white;
+    border-radius: 2vh;
+    padding: 1vh 1vw;
+    margin-top: 1vh;
+}
+
+#addCommentButton {
+    display: inline-table;
+    vertical-align: bottom;
+    color: white;
+    font-size: 2.5vh;
+    border: solid 1px white;
+    border-radius: 1.5vh;
+    padding: 1vh 1vw;
+    margin-left: 1vw;
+}
+
+#commentAsGuestPopup {
+    display: none;
+    top: 20vh;
+    left: 20vw;
+}
+
+#commentAsGuestProjectsNameAndPicture {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-bottom: solid 1px white;
+    border-radius: 2vh;
+    padding: 1vh 1vw;
+    margin-bottom: 2vh;
+}
+
+#commentAsGuestProjectsNameAndPicture b {
+    color: white;
+    font-size: 2.6vh;
+    margin: 0vh 1vw;
+    margin-right: 23vw;
+}
+
+#commentAsGuestProjectsNameAndPicture img {
+    height: 3vh;
+    width: 3vh;
+    border: solid 1px white;
+    border-radius: 1vh;
+    padding: 1vh;
+    object-fit: cover;
+    margin: 0vh 1vw;
+}
+
+#commentAsGuestEmailAddress {
+    display: table;
+    color: white;
+    font-size: 2.6vh;
+    padding: 2vh 2vw;
+    margin: 2vh;
+    text-align: center;
+    border: solid 1px white;
+    border-radius: 1.5vh;
+    background: transparent;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#commentAsGuestTextArea {
+    display: inline-flex;
+    vertical-align: bottom;
+    width: 40vw;
+    height: 20vh;
+    color: white;
+    font-size: 2.5vh;
+    background: transparent;
+    border: solid 1px white;
+    border-radius: 2vh;
+    padding: 1vh 1vw;
+    margin-top: 1vh;
+}
+
+#addCommentAsGuestButton {
+    display: inline-table;
+    vertical-align: bottom;
+    color: white;
+    font-size: 2.5vh;
+    border: solid 1px white;
+    border-radius: 1.5vh;
+    padding: 1vh 1vw;
+    margin-left: 1vw;
+}
+
+.comment {
+    display: table;
+    min-width: 20vw;
+    max-width: 37vw;
+    color: white;
+    font-size: 2.5vh;
+    border: solid 1px white;
+    border-radius: 2vh;
+    padding: 1vh 1vw;
+    margin-top: 2vh;
+}
+
+.sentComment {
+    float: right;
+    border-left: solid 5px white;
+    border-right: solid 5px #f9fbd8;
+}
+
+.receivedComment {
+    float: left;
+    border-left: solid 5px #f9fbd8;
+    border-right: solid 5px white;
+}
+
+.receivedComment div {
+    text-align: left;
+    float: left;
+}
+
+.sentComment div {
+    text-align: right;
+    float: right;
+}
+
+.commentSenderNameContainer {
+    display: table;
+    padding: 1vh 1vw;
+    width: 90%;
+}
+
+.commentSenderNameContainer input[type="text"] {
+    color: white;
+    font-size: 2.6vh;
+    width: 20vw;
+    padding: 1vh 1vw;
+    border: dotted 1px white;
+    border-radius: 1vh;
+}
+
+#profilePopup {
+    display: none;
+    top: 20vh;
+    left: 30vw;
+}
+
+#profilePopup img {
+    display: table;
+    height: 20vh;
+    width: 20vh;
+    object-fit: cover;
+    border: solid 1px white;
+    border-radius: 1.5vh;
+    margin: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#profilePopup input[type="text"] {
+    display: table;
+    color: white;
+    font-size: 2.6vh;
+    padding: 1vh 2vw;
+    max-width: 40vw;
+    text-align: center;
+    border: solid 1px white;
+    border-radius: 1.5vh;
+    background: transparent;
+    margin: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#profilePopup input[type="button"] {
+    display: table;
+    font-size: 2.6vh;
+    padding: 1vh 4vw;
+    border-radius: 1.5vh;
+    margin: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#editProfileButton {
+    border: solid 1px white;
+    color: white;
+}
+
+#logoutButton {
+    color: red;
+    font-weight: bold;
+    border: solid 1px red;
+    border-left: solid 4px red;
+    border-right: solid 4px red;
+    background: transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+#logoutButton:hover {
+    background: #f004;
+}
+
+#logoutButton:active {
+    background: red;
+}
+
+/*Buttons styling has to be low so as to override pre-declared backgrounds*/
+.buttons {
+    background: black;
+    cursor: pointer;
+    user-select: none;
+}
+
+.buttons:hover {
+    background: #fff4;
+}
+
+.buttons:active {
+    background: white;
+}
+
+/*Authentication Pages*/
+.wordMarkLogoContainer {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wordMarkLogoContainer img {
+    width: 35vw;
+}
+
+.inlineDivsContainerSignUpChild {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.signupProfilePicContainerContainer {
+    display: inline-table;
+    vertical-align: top;
+    padding: 2vh 2vw;
+    border: solid 1px white;
+    border-left: solid 5px white;
+    border-right: solid 5px white;
+    border-radius: 2vh;
+}
+
+.signupProfilePicContainer {
+    display: table;
+    padding: 1vh;
+    border: solid 1px white;
+    border-radius: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*This one helps the profile picture in the login page*/
+.signupProfilePicContainer img {
+    height: 20vh;
+    width: 20vh;
+    border-radius: 2vh;
+    object-fit: cover;
+}
+
+#profilePictureSelection {
+    height: 20vh;
+    width: 20vh;
+    border-radius: 2vh;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.signupButtonsContainer {
+    display: table;
+    padding: 2vh 2vw;
+    border: none;
+    border-top: solid 5px white;
+    border-bottom: solid 5px white;
+    border-radius: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.signupButtonsContainer input[type="button"] {
+    display: table;
+    font-size: 2.7vh;
+    border: solid 1px white;
+    border-radius: 1.5vh;
+    padding: 2vh 2vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.signupButtonsContainer a {
+    color: white;
+    font-size: 2.4vh;
+    display: table;
+    margin: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.signupDetailsContainer {
+    display: none;
+}
+
+.signupHorizontalLine {
+    display: inline-table;
+    vertical-align: top;
+    margin-top: 25vh;
+}
+
+.signupDetailsContainer {
+    display: inline-table;
+    vertical-align: middle;
+    padding: 6vh 2vw;
+    border: solid 1px white;
+    border-left: solid 5px white;
+    border-right: solid 5px white;
+    border-radius: 2vh;
+}
+
+.loginDetailsContainer {
+    margin-top: 8vh;
+}
+
+.signupDetailsContainerChild {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.signupDetailsContainerField {
+    display: table;
+    color: white;
+    font-size: 2.5vh;
+    border: solid 1px white;
+    border-radius: 1.5vh;
+    padding: 2vh 2vw;
+    background: transparent;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.passwordInputRowField {
+    display: inline-table;
+    vertical-align: middle;
+    border: none;
+    padding: 2vh 0.5vw;
+    margin: 0vh;
+    margin-left: 0.5vw;
+}
+
+.passwordInputRow {
+    display: table;
+    border: solid 1px white;
+    border-radius: 2vh;
+    padding-right: 1vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.passwordInputRow img {
+    height: 4vh;
+    display: inline-table;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#selectImage {
+    display: none;
+}
+
+/*FORUM owada*/
+#topBar {
+    display: table;
+    border: none;
+    border-left: solid 1px white;
+    border-right: solid 1px white;
+    border-bottom: solid 3px white;
+    border-radius: 2vh;
+    padding: 1vh 2vw;
+    margin: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#topBar b {
+    color: white;
+    font-size: 2.7vh;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+#topBar img {
+    height: 5vh;
+    width: 5vh;
+    border: solid 1px white;
+    border-radius: 1vh;
+}
+
+#messagesContainer {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 90vw;
+    height: 60vh;
+    border: solid 1px white;
+    border-top: solid 4px white;
+    border-bottom: solid 4px white;
+    border-radius: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#messagesContainerChild {
+    color: white;
+    font-size: 3vh;
+    text-align: center;
+    padding-top: 2vh;
+    display: table;
+    width: 87vw;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bottomBar {
+    display: table;
+    border: solid 0.5px white;
+    border-top: solid 3px white;
+    border-bottom: solid 3px white;
+    border-radius: 2vh;
+    margin-top: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bottomBar textarea {
+    display: inline-flex;
+    width: 85vw;
+    height: 15vh;
+    color: white;
+    font-size: 2.5vh;
+    background: transparent;
+    border: none;
+    padding: 1vh 1vw;
+}
+
+#bottomBar img {
+    display: inline-table;
+    vertical-align: bottom;
+    height: 4vh;
+    margin-bottom: 1vh;
+    margin-right: 1vw;
+    cursor: pointer;
+}
+
+/*Message*/
+.messageLine {
+    display: table;
+    width: 87vw;
+}
+
+.sentMessageLine {
+    text-align: right;
+}
+
+.receivedMessageLine {
+    text-align: left;
+}
+
+.message {
+    display: inline-table;
+    color: white;
+    font-size: 2.5vh;
+    max-width: 60vw;
+    border: solid 1px white;
+    border-left: solid 4px white;
+    border-right: solid 4px white;
+    border-radius: 2vh;
+    padding: 2vh 2vw;
+    margin: 4vh;
+}
+
+.sentMessage {
+    background: #ccfefb14;
+}
+
+.sentMessage .messageSenderNameContainer {
+    text-align: right;
+}
+
+.receivedMessage {
+    background: #f1f6a914;
+}
+
+.receivedMessage .messageSenderNameContainer {
+    text-align: left;
+}
+
+.messageSenderNameContainer {
+    display: table;
+    width: 58vw;
+    max-width: 58vw;
+    border: none;
+    margin: 1vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.messageSenderNameContainer input[type="text"] {
+    color: white;
+    font-size: 2.6vh;
+    border: solid 1px white;
+    border-radius: 1vh;
+    padding: 1vh 1vw;
+    background: transparent;
+}
+
+.message .timeInputContainer {
+    text-align: right;
+}
+
+.timeInputContainer input[type="text"] {
+    display: inline-table;
+    color: white;
+    width: 30vh;
+    font-size: 2.3vh;
+    border: dotted 1px white;
+    border-radius: 1vh;
+    padding: 0.5vh 0.5vw;
+    margin-top: 0.7vh;
+    background: transparent;
+}
+
+#olderMessageGettingButtonGroup {
+    display: none;
+    border: none;
+    border-top: solid 3px white;
+    border-bottom: solid 3px white;
+    border-radius: 2vh;
+    margin: 4vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#olderMessageGettingButtonGroup input[type="button"] {
+    color: white;
+    font-size: 2.5vh;
+    font-weight: 600;
+    text-decoration: none;
+    border: solid 1px white;
+    border-radius: 1vh;
+    padding: 1vh;
+    margin: 2vh 3vh;
+}
