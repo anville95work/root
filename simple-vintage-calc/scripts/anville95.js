@@ -1,12 +1,3 @@
-//if the screen is desktop, change to desktop layout
-var link = document.getElementsByTagName("link")[0];
-//Get the window dimensions
-var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-var height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-if(height / width < 1){
-	link.setAttribute("href", "css/anville95.css");
-}
-	console.log(link);
 //is the calculator on or off?
 var isCalculatorOn = true;
 //current number is string and is turned into a number ONLY upon addition to list so as to ease it's modification with the delete button

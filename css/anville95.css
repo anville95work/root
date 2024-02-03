@@ -682,6 +682,7 @@ html, body {
 
 /*Buttons styling has to be low so as to override pre-declared backgrounds*/
 .buttons {
+    color: white;
     background: black;
     cursor: pointer;
     user-select: none;
