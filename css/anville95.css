@@ -19,6 +19,13 @@ textarea:focus {
     outline: none;
 }
 
+code {
+    display: table;
+    background: #ffff0007;
+    padding: 1vh;
+    border-radius: 2vh;
+}
+
 .scrollBarVisibleDivs {
   /*Scrollbar customization*/
   /*Microsoft*/
@@ -297,6 +304,10 @@ html, body {
 
 #android-calculator-v2 {
     background-image: url("../images/android-calculator-v2.png");
+}
+
+#javascript-tabs-library {
+    background-image: url("../images/tabs-js-library.png");
 }
 
 .descriptionAndButtonsDiv {

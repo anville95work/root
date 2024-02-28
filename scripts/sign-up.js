@@ -154,18 +154,23 @@ function uploadImageToDB(fullPath, imageFile, callBackFunction) {
         })
 }
 
-var isPasswordVisible = true;
+var isPasswordVisible = {
+    passwordImage: true,
+    repeatPasswordImage: true
+};
+
 function changePasswordTextVisibility(event) {
     let passwordElement = document.getElementById(event.target.getAttribute("target"));
+    let toggleVisibilityButton = event.target;
     
-    if(isPasswordVisible) {
+    if(isPasswordVisible[toggleVisibilityButton.getAttribute("id")]) {
         passwordElement.type = "password";
         event.target.setAttribute("src", "../images/eye-closed.png");
-        isPasswordVisible = false;
+        isPasswordVisible[toggleVisibilityButton.getAttribute("id")] = false;
     } else {
         passwordElement.type = "text";
         event.target.setAttribute("src", "../images/eye-open.png");
-        isPasswordVisible = true;
+        isPasswordVisible[toggleVisibilityButton.getAttribute("id")] = true;
     }
 }
 
