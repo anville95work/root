@@ -784,7 +784,7 @@ code {
 
 /*Comment as guest*/
 #commentAsGuestPopup {
-  display: table;
+  display: none;
   position: fixed;
   top: 14vh;
   left: 10vw;
@@ -867,17 +867,16 @@ code {
 }
 
 #addCommentAsGuestButton {
-    display: inline-table;
+    display: table;
     vertical-align: bottom;
     color: white;
     font-size: 2vh;
-    float: right;
     border: solid 1px white;
     border-left: solid 1vw white;
     border-right: solid 1vw white;
     padding: 2vw;
     border-radius: 1vw;
-    margin: 1vh 0vh;
+    margin: 1vh auto;
 }
 
 #profilePictureSelection {
