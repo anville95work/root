@@ -276,7 +276,7 @@ html, body {
     margin-right: auto;
 }
 
-.nameAndPicDiv div {
+.nameAndPicDiv div, .nameAndPicDiv video {
     display: table;
     width: 30vw;
     height: 38vh;

@@ -1,13 +1,3 @@
-//Get the window dimensions
-var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-var height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-//Redirect to mobile layout page if The aspect ratio is that of a mobile
-if (height / width > 1 && window.location.href.indexOf("phone") < 0) {
-	window.location.replace("phone-forum.html");
-} else if (height / width < 1 && window.location.href.indexOf("phone") > 0) {
-    window.location.replace("forum.html");
-}
-
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.2.0/firebase-app.js";
 import { getAuth, signInWithEmailAndPassword, sendEmailVerification } from "https://www.gstatic.com/firebasejs/10.2.0/firebase-auth.js";
 import { getStorage, getBytes, uploadBytes, ref, uploadString, getDownloadURL, listAll } from "https://www.gstatic.com/firebasejs/10.2.0/firebase-storage.js";
@@ -661,6 +651,12 @@ function initiate() {
     signInWithEmailAndPassword(auth, emailAddress, password).then( userCredentials => {
         if(userCredentials.user.uid !== "3MU1wIM3v3YyDbDkC1YuGT7soYz2") {
             alert("Ha! you're not the admin😂. Back to index you go!😂");
+            window.location.href = "../../../../../../../index.html";
+            return;
+        }
+    }).catch(error => {
+        if(userCredentials.user.uid !== "3MU1wIM3v3YyDbDkC1YuGT7soYz2") {
+            alert("Ha! you're logged in😂. Back to index you go!😂");
             window.location.href = "../../../../../../../index.html";
             return;
         }

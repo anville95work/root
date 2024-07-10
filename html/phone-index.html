@@ -46,6 +46,331 @@
                 <!--Projects-->
                 <div class="project">
                     <div class="nameAndPicDiv">
+                        <h5>anvilleBook</h5>
+                        <video class="projectPicture" src="../videos/anville-book.mp4" controls></video>
+                    </div>
+                    <div class="descriptionAndButtonsDiv">
+                        <div class="projectDescriptionDiv scrollBarHiddenDivs">
+                            <div>
+                                This is a quircks web chat application. It was my final attempt at making something significant using DOM only before I get into React js. The features of this web app include: account creation and authentication, sending, accepting, canceling and deleting friend requests. Unfollowing, following and unfriending friends, posting pictures, texts and videos, configuring the name, profile picture and cover picture in the profile, sending and receiving messages in real time and responsiveness. The color of the UI was inspired by my love of sunsets, but I couldn't get the colour right though 😅. Thank you for viewing, I hope you enjoy. Have fun.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projectButtonsContainer">
+                        <input action="file" href="../zip/anville-book.zip" class="buttons projectButtons" type="button"
+                            value="Try it out">
+                        <input gitHubLink="https://github.com/anville95work/anville-book"
+                            class="buttons projectButtons" type="button" value="View Project's Files">
+                        <input projectName="anvilleBook" class="buttons projectButtons" type="button"
+                            value="Comment on the project">
+                    </div>
+                </div>
+                
+                <div class="project">
+                    <div class="nameAndPicDiv">
+                        <h5>JavaScript Menus Library</h5>
+                        <video class="projectPicture" src="../videos/menus-lib.mp4" controls></video>
+                    </div>
+                    <div class="descriptionAndButtonsDiv">
+                        <div class="projectDescriptionDiv scrollBarHiddenDivs">
+                            <div>
+                                This is a self-contained menus library that I made for javascript. I shalt proceed to provide the code I used to test it, as a simple tutorial below. Thank you for reading. To test any functionality, remove the multiline comment ('/*' and '*/') around the code group for that given functionality. Thank you for reading, good luck.
+                                <code>
+//------------------------------------------------------------
+//appBar only
+//createAppBar();
+//------------------------------------------------------------
+
+
+//------------------------------------------------------------
+//appBar with normal icon buttons only
+/*let normalButtonsIconsSrcsArray = {
+    0: "../images/vlc.png",
+    1: "../images/eye-closed.png",
+    2: "../images/eye-open.png",
+    3: "../images/logo.png",
+    4: "../images/password.png",
+    5: "../images/send-message.png",
+    length: 6
+}
+
+createAppBar(normalButtonsIconsSrcsArray, undefined, (index) => {
+    console.log("an icon was clicked: " + index);
+});*/
+//------------------------------------------------------------
+
+
+//------------------------------------------------------------
+//appBar with normal icons and contextual icon buttons
+/*let normalButtonsIconsSrcsArray = {
+    0: "../images/vlc.png",
+    1: "../images/eye-closed.png",
+    2: "../images/eye-open.png",
+    3: "../images/logo.png",
+    4: "../images/password.png",
+    5: "../images/send-message.png",
+    length: 6
+}
+
+let contextualButtonsIconsSrcsArray = {
+    0: "../images/anville-cyan.png",
+    1: "../images/calculator-logo.png",
+    2: "../images/blue-jet.png",
+    length: 3
+}
+
+createAppBar(normalButtonsIconsSrcsArray, contextualButtonsIconsSrcsArray, (index) => {
+    console.log("A normal icon button was clicked", "index: " + index);
+}, (index) => {
+    console.log("A contextual icon button was clicked", "index: " + index);
+});
+
+//toggling contextual mode
+var isContextualModeOn = false;
+let toggleContextualMode = document.getElementById("toggleContextualMode");
+toggleContextualMode.onclick = () => {
+    if(isContextualModeOn) {
+        turnOffContextualMode();
+        isContextualModeOn = false;
+    } else {
+        turnOnContextualMode();
+        isContextualModeOn = true;
+    }
+}*/
+//------------------------------------------------------------
+
+
+//------------------------------------------------------------
+//appBar with options menu at the same time. Also with normal icon buttons and contextual icon buttons
+/*let normalButtonsIconsSrcsArray = {
+    0: "../images/vlc.png",
+    1: "../images/eye-closed.png",
+    2: "../images/eye-open.png",
+    3: "../images/logo.png",
+    4: "../images/password.png",
+    5: "../images/send-message.png",
+    length: 6
+}
+
+let contextualButtonsIconsSrcsArray = {
+    0: "../images/anville-cyan.png",
+    1: "../images/calculator-logo.png",
+    2: "../images/blue-jet.png",
+    length: 3
+}
+
+let createOptionsMenuBoolean = true;
+
+let optionsStringsArray = {
+    0: "vcl",
+    1: "eye-closed",
+    2: "eye-open",
+    3: "logo",
+    4: "password",
+    5: "send-message",
+    length: 6
+}
+
+let optionsIconsSrcsArray = {
+    0: "../images/vlc.png",
+    1: "../images/eye-closed.png",
+    2: "../images/eye-open.png",
+    3: "../images/logo.png",
+    4: "../images/password.png",
+    5: "../images/send-message.png",
+    length: 6
+}
+
+createAppBar(normalButtonsIconsSrcsArray, contextualButtonsIconsSrcsArray, (index) => {
+    console.log("A normal icon button was clicked", "index: " + index);
+}, (index) => {
+    console.log("A contextual icon button was clicked", "index: " + index);
+}, createOptionsMenuBoolean, optionsStringsArray, optionsIconsSrcsArray, (index, name) => {
+    console.log("An option was selected in the optionsMenu");
+    console.log("optionIndex", index);
+    console.log("optionName", name);
+})*/
+//------------------------------------------------------------
+
+
+//------------------------------------------------------------
+//creating optionsMen. showing and hiding it.
+/*let optionsStringsArray = {
+    0: "vcl",
+    1: "eye-closed",
+    2: "eye-open",
+    3: "logo",
+    4: "password",
+    5: "send-message",
+    length: 6
+}
+
+let optionsIconsSrcsArray = {
+    0: "../images/vlc.png",
+    1: "../images/eye-closed.png",
+    2: "../images/eye-open.png",
+    3: "../images/logo.png",
+    4: "../images/password.png",
+    5: "../images/send-message.png",
+    length: 6
+}
+createOptionsMenu(optionsStringsArray, optionsIconsSrcsArray, (index, name) => {
+    console.log("An option was selected in the optionsMenu");
+    console.log("optionIndex", index);
+    console.log("optionName", name);
+})
+
+
+let toggleOptionsMenu = document.getElementById("toggleOptionsMenu");
+toggleOptionsMenu.onclick = () => {
+    //isOptionsMenuVisible is defined in the library
+    if(isOptionsMenuVisible) {
+        hideOptionsMenu();
+    } else {
+        showOptionsMenu();
+    }
+}*/
+//------------------------------------------------------------
+
+
+//------------------------------------------------------------
+//adding context menu.
+
+/*let contextMenuButtonsStringsArray = {
+    0: "vcl",
+    1: "eye-closed",
+    2: "eye-open",
+    length: 3
+}
+
+let contextMenuButtonsIconsSrcs = {
+    0: "../images/vlc.png",
+    1: "../images/eye-closed.png",
+    2: "../images/eye-open.png",
+    length: 3
+}
+
+let itemClickListener = (index, name, menuName) => {
+    console.log("context menu named [" + menuName + "] was clicked!");
+    console.log("itemIndex", index);
+    console.log("itemName", name);
+}
+
+addNewContextMenu("firstContextMenu", contextMenuButtonsStringsArray, contextMenuButtonsIconsSrcs, itemClickListener);
+
+
+let secondContextMenuButtonsStringsArray = {
+    0: "logo",
+    1: "password",
+    2: "send-message",
+    length: 3
+}
+
+let secondContextMenuButtonsIconsSrcs = {
+    0: "../images/logo.png",
+    1: "../images/password.png",
+    2: "../images/send-message.png",
+    length: 3
+}
+
+addNewContextMenu("secondContextMenu", secondContextMenuButtonsStringsArray, secondContextMenuButtonsIconsSrcs, itemClickListener);
+
+//showing the context Menus
+let toggleFirstContextMenu = document.getElementById("toggleFirstContextMenu");
+toggleFirstContextMenu.onclick = () => {
+    showContextMenu("firstContextMenu", toggleFirstContextMenu);
+}
+
+let toggleSecondContextMenu = document.getElementById("toggleSecondContextMenu");
+toggleSecondContextMenu.onclick = () => {
+    showContextMenu("secondContextMenu", toggleSecondContextMenu)
+}*/
+//------------------------------------------------------------
+
+
+//------------------------------------------------------------
+//Adding popupMenu
+/*let menuTitle = "FIRST POPUP MENU";
+let menuName = "firstPopupMenu";
+
+let popupMenuButtonsStringsArray = {
+    0: "vcl",
+    1: "eye-closed",
+    2: "eye-open",
+    length: 3
+}
+
+let popupMenuButtonsIconsSrcs = {
+    0: "../images/vlc.png",
+    1: "../images/eye-closed.png",
+    2: "../images/eye-open.png",
+    length: 3
+}
+
+let itemClickListener = (index, name, menuName, menuTitle) => {
+    console.log("A popupMenu named [" + menuName + "] was clicked!");
+    console.log("itemIndex", index);
+    console.log("itemName", name);
+    console.log("menuTitle", menuTitle);
+}
+
+addPopupMenu(menuTitle, menuName, popupMenuButtonsStringsArray, popupMenuButtonsIconsSrcs, itemClickListener);
+
+let toggleFirstPopupMenu = document.getElementById("toggleFirstPopupMenu");
+toggleFirstPopupMenu.onclick = () => {
+    showPopupMenu("firstPopupMenu");
+}
+
+
+let secondMenuTitle = "SECOND POPUP MENU";
+let secondMenuName = "secondPopupMenu";
+
+let secondPopupMenuButtonsStringsArray = {
+    0: "vcl",
+    1: "eye-closed",
+    2: "eye-open",
+    length: 3
+}
+
+let secondPopupMenuButtonsIconsSrcs = {
+    0: "../images/vlc.png",
+    1: "../images/eye-closed.png",
+    2: "../images/eye-open.png",
+    length: 3
+}
+
+addPopupMenu(secondMenuTitle, secondMenuName, secondPopupMenuButtonsStringsArray, secondPopupMenuButtonsIconsSrcs, itemClickListener);
+
+let toggleSecondPopupMenu = document.getElementById("toggleSecondPopupMenu");
+toggleSecondPopupMenu.onclick = () => {
+    showPopupMenu("secondPopupMenu");
+}*/
+//------------------------------------------------------------
+
+
+//Adding custom style
+/*
+let menuStyle = "border-color: cyan; color: cyan; background-color: #044a"
+let menuButtonStyleNormal = "background-color: #0ff2; border-color: cyan; color: cyan;";
+let menuButtonStyleHover = "background-color: #0ff9";
+let menuButtonStyleActive = "background-color: #0ff";
+let menuTitleStyle = "color: cyan; border-color: cyan;";
+customiseMenuStyle(menuStyle, menuButtonStyleNormal, menuButtonStyleHover, menuButtonStyleActive, menuTitleStyle)
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projectButtonsContainer">
+                        <input action="file" href="../zip/JavaScriptMenusLibrary.zip" class="buttons projectButtons" type="button"
+                            value="Try it out">
+                        <input gitHubLink="https://github.com/anville95work/JavaScript-Menus-Library" type="button" value="View Project's Files">
+                        <input projectName="JavaScript Menus Library" class="buttons projectButtons" type="button"
+                            value="Comment on the project">
+                    </div>
+                </div>
+                
+                <div class="project">
+                    <div class="nameAndPicDiv">
                         <h5>JavaScript tabs Library</h5>
                         <div id="javascript-tabs-library" class="projectPicture"></div>
                     </div>
